@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/nfdi-dsai
+
+idspace: NFDI-DSAI
+base_url: /obo/nfdi-dsai
+
+products:
+- nfdi-dsai.owl: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdi-dsai-ontology/main/nfdi-dsai.owl
+- nfdi-dsai.obo: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdi-dsai-ontology/main/nfdi-dsai.obo
+
+term_browser: ontobee
+example_terms:
+- NFDI-DSAI_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdi-dsai-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/ISE-FIZKarlsruhe/nfdi-dsai-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/NFDI-DSAI?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdi-dsai-ontology/main/
+

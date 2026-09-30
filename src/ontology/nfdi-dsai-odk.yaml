@@ -1,0 +1,16 @@
+id: nfdi-dsai
+title: "NFDI-DSAI-Ontology"
+github_org: ISE-FIZKarlsruhe
+repo: nfdi-dsai-ontology
+git_main_branch: main
+license: https://creativecommons.org/licenses/by/4.0/
+uribase: https://nfdi.fiz-karlsruhe.de/dsai
+namespaces:
+  - https://nfdi.fiz-karlsruhe.de/dsai
+edit_format: owl
+export_formats: [owl, ttl, json]
+release_artefacts: [base, full]
+primary_release: full
+robot_java_args: '-Xmx8G'
+import_group:
+  products: []
